@@ -1,0 +1,221 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Remove o scroll horizontal */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw; /* Ocupa 100% da largura da viewport */
+    max-width: 100%; /* Impede que o header ultrapasse a largura máxima */
+    background: linear-gradient(8deg, rgba(57, 115, 72, 1) 0%, rgba(45, 89, 56, 1) 30%, rgba(32, 64, 40, 1) 100%);
+    gap: 10px; /* Espaçamento inicial entre itens */
+    box-sizing: border-box;
+}
+nav{
+    font-weight: bolder;
+}
+
+/* Logo */
+.logo img {
+    height: 80px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    border: 3px solid transparent;
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* Espaçamento inicial para itens de navegação */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espaço entre os itens do menu */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+
+    transition: all 0.3s ease;
+    text-align: flex-end;
+    position: relative;
+}
+
+nav ul li a span {
+    display: block; /* Mostra o texto dos itens */
+}
+
+nav ul li a i {
+    font-size: 1.2rem;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    transform: translateY(-2px);
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown ul {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    transform: translateY(20px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.dropdown:hover ul {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown ul li {
+    padding: 12px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown ul li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown ul li:hover {
+    background-color: #f1f1f1;
+}
+
+/* Barra de Pesquisa */
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Ajuste conforme necessário */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.input-busca {
+    padding: 10px 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    width: 200px;
+    height: 100%; /* Garantir que a altura seja 100% do contêiner */
+    margin-right: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.input-busca:focus {
+    width: 250px;
+    border-color: #3e9473;
+    box-shadow: 0 0 10px rgba(62, 148, 115, 0.3);
+    outline: none;
+}
+
+/* Botão de busca */
+.search-bar button {
+    padding-top:8px;
+    padding-bottom:12px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: #3e9473;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    height: 100%; /* Garantir que o botão tenha a mesma altura da barra de pesquisa */
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-left: -5px;
+}
+
+.search-bar button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(62, 148, 115, 0.5);
+}
+
+/* Responsivo: ícones em vez de texto para telas pequenas */
+@media (max-width: 768px) {
+    header {
+        padding-top: 0px;
+        height: auto;
+        top: 30px;
+    }
+    /* Oculta o texto das opções e mostra apenas os ícones */
+    nav ul li a span {
+        display: none;
+        justify-content: space-around;
+        margin-left: 10px;
+        gap: 0px;
+    }
+
+    nav ul li a i {
+        font-size: 2rem; /* Aumenta o tamanho do ícone */
+    }
+
+    .logo img {
+        height: 50px; /* Reduz o tamanho da logo */
+    }
+
+}
+@media (max-width:800px){
+    .search-bar {
+        display: none; /* Opcional: oculta a barra de pesquisa em telas pequenas */
+    }
+}
+
+@media (max-width: 400px) {
+    header {
+        display: grid;
+        grid-template-rows: min-content;
+        gap: 0px;
+        height: auto;
+        justify-items: center;
+        align-items: center;
+    }
+    .logo {
+        justify-content: center;
+    }
+   
+}

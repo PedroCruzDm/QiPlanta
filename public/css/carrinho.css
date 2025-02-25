@@ -1,0 +1,128 @@
+/* Define o estilo básico para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Define que a altura mínima do body é 100% da altura da tela */
+}
+
+main {
+    margin: 5% auto;
+    padding: 5%;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Faz com que o main ocupe o espaço disponível */
+}
+
+/* Estilo da div principal do carrinho de compras */
+.div-carrinho-compras {
+    margin-top: 2%;
+}
+
+h1 {
+    color: #4CAF50;
+    margin: 10px 0 15px 10px;
+}
+
+h2 {
+    color: #aaacaa;
+    margin-bottom: 15px;
+}
+
+/* Estilo da lista de produtos no carrinho */
+.lista-produto-carrinho {
+    margin-top: 20px;
+}
+
+ul.lista-carrinho {
+    padding: 0;
+}
+
+ul.lista-carrinho li {
+    margin-bottom: 20px;
+}
+
+/* Estilo para cada produto dentro do carrinho */
+.produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.produto img {
+    margin-top: 10px; /* faz uma margem na parte de cima da img */
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.produto h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.produto h3 strong {
+    color: #3f9442;
+}
+
+.produto p {
+    color: #333;
+}
+
+/* Botões */
+.btn-decrementar, .btn-incrementar, .btn-finalizar-compra {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-decrementar {
+    background-color: red;
+}
+
+.btn-decrementar:hover {
+    background-color: #810101;
+}
+
+.btn-incrementar {
+    background-color: green;
+}
+
+.btn-incrementar:hover {
+    background-color: #014d01;
+}
+
+.btn-finalizar-compra {
+    background-color: #4CAF50;
+    margin-top: 20px;
+}
+
+.btn-finalizar-compra:hover {
+    background-color: #388E3C;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+}

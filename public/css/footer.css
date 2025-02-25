@@ -1,0 +1,97 @@
+footer {
+    background: rgb(57,115,72);
+    background: linear-gradient(8deg, rgba(57,115,72,1) 0%, rgba(45,89,56,1) 30%, rgba(32,64,40,1) 100%);
+    min-height: 250px;
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: auto;
+    transition: all 0.3s ease;
+    -webkit-user-select: none; /* para  usuario n selecionar <a>*/
+    -ms-user-select: none; 
+    user-select: none; /*fim*/
+  }
+  
+  footer img{
+    border-radius:50%;
+    height: 90px;
+    width: 90px;
+    transition: all 0.3s ease;
+    border: 3px solid transparent;
+  }
+  
+  footer hr{
+    height:2px;
+    border-width:0;
+    background: linear-gradient(to right, transparent, white, transparent);
+    margin: 20px auto;
+    width: 80%;
+  }
+  
+  footer p, footer a {
+      color: azure;
+      font-size: 18px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      position: relative;
+      display: inline-block;
+  }
+  
+  footer a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #ffffff;
+      transition: width 0.3s ease;
+  }
+  
+  footer a:hover::after {
+      width: 100%;
+  }
+  
+  footer a:hover {
+      color: #3e9473;
+      transform: translateY(-2px);
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Adiciona animação de entrada suave */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  footer * {
+    animation: fadeInUp 0.5s;
+    will-change: transform, opacity;
+    filter: none; /* Garante que não haja desfoque */
+  }
+  .social-media {
+    text-align: right;
+    margin-top: 15px;
+  }
+  
+  .social-icons a {
+    margin-left: 1px;
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .social-icons a:hover {
+    color: #ffffff;
+  }

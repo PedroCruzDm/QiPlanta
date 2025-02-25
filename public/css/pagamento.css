@@ -1,0 +1,205 @@
+/* Reset de Estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global do body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Estilos para a lista de produtos no carrinho */
+.lista-produto-carrinho {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.lista-carrinho {
+    list-style: none;
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.produto img {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.produto h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.produto p {
+    margin: 5px 0;
+}
+
+.produto b {
+    font-weight: bold;
+    color: #333;
+}
+
+.produto .subtotal {
+    color: #3f9442;
+}
+
+/* Estilo para o total geral */
+.center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo do formulário de pagamento */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+form .container {
+    margin-bottom: 15px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+button:active {
+    background-color: #1e7e34;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    margin-top: 10px;
+}
+
+/* Estilo do formulário de pagamento */
+#form-checkout {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    padding: 30px;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+/* Foco em inputs e selects */
+input:focus,
+select:focus {
+    border-color: #2ecc71;
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(46, 204, 113, 0.1);
+    outline: none;
+}
+
+/* Estilo para o botão de envio */
+#form-checkout__submit {
+    background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+    color: white;
+    padding: 14px 28px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#form-checkout__submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(46, 204, 113, 0.3);
+}
+
+#form-checkout__submit:active {
+    transform: translateY(0);
+}
+
+/* Estilo da barra de progresso */
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background: #f0f0f0;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+progress {
+    width: 100%;
+    height: 10px;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+progress::-webkit-progress-value {
+    background: linear-gradient(90deg, #2ecc71 0%, #27ae60 100%);
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+
+progress::-moz-progress-bar {
+    background: linear-gradient(90deg, #2ecc71 0%, #27ae60 100%);
+    border-radius: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    form {
+        padding: 20px;
+    }
+
+    #form-checkout {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    #form-checkout input,
+    #form-checkout select {
+        padding: 10px 14px;
+    }
+}
