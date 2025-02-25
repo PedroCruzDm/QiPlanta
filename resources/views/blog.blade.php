@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - QiPlanta</title>
-    <link rel="icon" href="{{ assert('image/icon/icons8-pinheiro-162.png') }}" type="image/png">
+    <link rel="icon" href="{{ asset('image/icon/icons8-pinheiro-162.png') }}" type="image/png">
     <link rel="stylesheet" href="{{ url('css/blog.css') }}">
 </head>
 <body>
