@@ -37,3 +37,7 @@ Route::get('login', function () {
 Route::get('cadastro', function () {
     return view('cadastro');
 });
+
+Route::get('menu_usuario', function () {
+    return view('menu_usuario');
+});

@@ -1,0 +1,93 @@
+main#main_usuario{
+    justify-items: center;
+    align-content: center;
+}
+
+
+
+.container_usuario{
+    width: 70%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    border-radius: 24px;
+    padding: 20px;
+}
+
+.container_usuario .titulo{
+    align-content: center;
+    justify-items: center;
+    font-weight: bold;
+}
+
+.container_usuario .divisoria{
+    display: grid;
+    background-color: #e2e2e2;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 0px;
+    border-radius: 24px;
+}
+
+.container_usuario .produtos{
+    justify-content: center;
+}
+
+.produtos .produto{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    text-align: center;
+    flex-direction: column;
+    min-height: 450px;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    animation: fadeInUp 0.2s ease-out forwards;
+    animation-delay: calc(var(--produto-index, 0) * 0.2s);
+    opacity: 0;
+}
+
+.produtos .produto img{
+    align-content: center;
+    justify-items: center;
+    border-radius: 50%;
+    width: 80%;
+    border:  8px solid rgb(21, 255, 0);
+}
+.produto .add_icon{
+    align-content: center;
+    justify-items: center;
+}
+
+.produto .editar {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border-radius: 24px;
+    padding: 5px;
+}
+.produto .editar:hover{
+    background-color: yellowgreen;
+}
+
+.produto .deletar {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 24px;
+    padding: 5px;
+}
+.produto .deletar:hover{
+    background-color: rgb(160, 1, 1);
+}
