@@ -56,7 +56,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <input type="checkbox" name="check" id="check">
+                            <input type="checkbox" class="opcao">
                         </td>
                         <td>Nome do Produto</td>
                         <td>Imagem</td>
@@ -73,7 +73,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <input type="checkbox" name="check" id="check">
+                            <input type="checkbox" class="opcao">
                         </td>
                         <td>Nome do Produto</td>
                         <td>Imagem</td>
@@ -87,6 +87,28 @@
                             <button id="btn_editar" name="btn_editar">Editar</button>
                             <button id="btn_excluir" name="btn_excluir">Excluir</button>
                         </td>
+                    </tr>
+                    <tr>
+
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const marcarTudo = document.getElementById("check_all");
+            const checkboxes = document.querySelectorAll(".opcao");
+    
+            marcarTudo.addEventListener("change", function () {
+                checkboxes.forEach(checkbox => {
+                    checkbox.checked = marcarTudo.checked;
+                });
+            });
+    
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener("change", function () {
+                    marcarTudo.checked = [...checkboxes].every(c => c.checked);
+                });
+            });
+        });
+    </script>
                     </tr>
                 </table>
             </div>

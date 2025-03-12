@@ -1,0 +1,120 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('./../image/Teste-Background.png'); /* Altere para o caminho da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    color: #ffffff;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    justify-items: center;
+    padding-top: 5%;
+}
+
+.container-controle-vendas{
+    width: 50%;
+    border-radius: 24px;
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 24px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    text-align: center;
+    min-height: 450px;
+    position: relative;
+    overflow: hidden;
+    color: #000;
+}
+.container-controle-vendas .titulo{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 2%;
+}
+.container-controle-vendas table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2%;
+}
+.container-controle-vendas table th{
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+}
+.container-controle-vendas table td{
+    padding: 10px;
+    text-align: center;
+}
+.container-controle-vendas table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+.container-controle-vendas table tr:hover{
+    background-color: #ddd;
+}
+.container-controle-vendas table .editar_btn{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.container-controle-vendas table .editar_btn:hover{
+    background-color: #45a049;
+}
+.container-controle-vendas table .deletar_btn{
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.container-controle-vendas table .deletar_btn:hover{
+    background-color: #da190b;
+}
+
+div.header_produtos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+div.header_produtos button{
+    margin-left: 10px;
+    font-size: large;
+}
+button#btn-busca{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button#btn-busca:hover{
+    background-color: #347938;
+}
+button#btn_organizar{
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+button#btn_organizar:hover{
+    background-color: #2e6da4;
+}
+button#btn_organizar_novo{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
