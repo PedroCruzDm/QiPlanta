@@ -1,5 +1,4 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -38,6 +37,14 @@ Route::get('cadastro', function () {
     return view('cadastro');
 });
 
-Route::get('menu_usuario', function () {
+Route::get('menu-usuario', function () {
     return view('menu_usuario');
+});
+
+Route::get('cadastro-produto', function () {
+    return view('cadastro_produto');
+});
+
+Route::get('controle-vendas', function () {
+    return view('controle_Vendas');
 });

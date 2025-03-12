@@ -2,7 +2,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background: url('./../../views/images/Teste-Background.png') center/cover no-repeat;
+    background: url('./../image/Teste-Background.png') center/cover no-repeat;
     min-height: 100vh;
 }
 
@@ -48,19 +48,6 @@ body {
     margin: 40px 0;
 }
 
-@media (max-width: 768px) {
-    .blog-container {
-        padding: 15px;
-    }
-
-    .artigo {
-        padding: 20px;
-    }
-
-    .titulo-principal {
-        font-size: 2rem;
-    }
-}
 .blog-grid {
     display: grid;
     grid-template-columns: 60% 35%;
@@ -140,4 +127,18 @@ iframe{ /*telinha do YT*/
 }
 iframe:hover{
     border:#2d5938 2px solid;
+}
+
+@media (max-width: 768px) {
+    .blog-container {
+        padding: 15px;
+    }
+    
+    .artigo {
+        padding: 20px;
+    }
+    
+    .titulo-principal {
+        font-size: 2rem;
+    }
 }

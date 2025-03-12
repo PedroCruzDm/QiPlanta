@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-image: url('../images/Teste-Background.png'); /* Altere para o caminho da sua imagem */
+    background-image: url('./../image/Teste-Background.png'); /* Altere para o caminho da sua imagem */
     background-size: cover; /* Faz a imagem cobrir todo o fundo */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Não repete a imagem */

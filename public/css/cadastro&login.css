@@ -14,7 +14,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     font-family: 'Arial', sans-serif;
-    background-image: url('./../views/images/Teste-Background.png');
+    background-image: url('./../image/Teste-Background.png');
     margin: 0;
     padding: 0;
     animation: fadeIn 1s ease-out;

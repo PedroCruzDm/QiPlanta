@@ -63,7 +63,7 @@ main#main_usuario{
     justify-items: center;
     border-radius: 50%;
     width: 80%;
-    border:  8px solid rgb(21, 255, 0);
+    border:  8px solid #2c5837;
 }
 .produto .add_icon{
     align-content: center;
@@ -90,4 +90,26 @@ main#main_usuario{
 }
 .produto .deletar:hover{
     background-color: rgb(160, 1, 1);
+}
+
+
+.from_cadastro_produto{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    text-align: center;
+    flex-direction: column;
+    min-height: 450px;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    animation: fadeInUp 0.2s ease-out forwards;
+    animation-delay: calc(var(--produto-index, 0) * 0.2s);
+    opacity: 0;
 }

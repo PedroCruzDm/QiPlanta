@@ -4,7 +4,7 @@ body {
     color: var(--text-color);
     display: flex;
     flex-direction: column;
-    background: url('./../../views/images/Teste-Background.png') center/cover no-repeat;
+    background: url('./../image/Teste-Background.png') center/cover no-repeat;
     font-family: 'Arial', sans-serif;
 }
 

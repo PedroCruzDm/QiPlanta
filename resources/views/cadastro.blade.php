@@ -13,7 +13,7 @@
         </header>
 
         <main>
-<div class="container-cadastro">
+        <div class="container-cadastro">
             <div class="divisoria" style="color:antiquewhite;">
                 <div> <!-- forms -->
 
