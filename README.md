@@ -6,7 +6,7 @@
 
 ###
 
-<p align="center">Inicialmente era um projeto que foi apresentado na Feira Tecnológica, onde foi aprovado pelo coordenador para continuar o desenvolvimento do projeto. Qi Planta é um projeto para facilitar a busca dos usuarios por uma floricultura proxima ou pela rede</p>
+<p align="center">Inicialmente era um projeto que foi apresentado na Feira Tecnológica, onde foi aprovado pelo coordenador para continuar o desenvolvimento do projeto. Qi Planta é  um E-commerce eficiente no controle e venda de produtos, facilitando o acesso do cliente a floriculturas da região, o ponto principal deste projeto seria uma monte para o vendedor e o cliente onde além do acesso fácil aos produtos, o usuário poderá aprender sobre as plantas. O QiPlanta é um E-Commerce informativo, com o ponto principal de informar o cliente sobre a planta, de onde ela veio, como cuidar, e para o que ela serve.</p>
 
 ###
 
