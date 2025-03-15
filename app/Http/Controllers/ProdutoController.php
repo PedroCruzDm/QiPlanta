@@ -37,4 +37,8 @@ class ProdutoController extends Controller{
         $produto->save();
     }
 
+    public function listar_controle_vendas(){
+        $produto_user = produto::orderBy('id', 'desc')->get();
+    }
+
 }

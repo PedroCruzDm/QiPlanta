@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{ asset('css/header.css') }}">
     <link rel="icon" href="{{ asset('image/icon/icons8-pinheiro-162.png') }}" type="image/png">
     <link rel="stylesheet" href="{{ asset('css/controle_vendas.css') }}">
-    <script src="{{ url('js/controle_vendas') }}"></script>
+    <script src="{{ url('js/controle_vendas.js') }}" type="module"></script>
 </head>
 <body>
     <header>
@@ -25,20 +25,15 @@
 
                 <button id="btn_organizar" name="btn_organizar">filtrar</button>
                 <button id="btn_organizar_novo" name="btn_organizar_novo">Mais recentes</button>
-                <button id="btn_adicionar" name="btn_adicionar">Adicionar produto</button>
+
+                <a href="{{ url('cadastro-produto') }}">
+                    <button id="btn_adicionar" name="btn_adicionar">Adicionar produto</button>
+                </a>
+
             </div>
             <div class="produtos_tabelas">
                 <p>Produtos: <?php echo("");?></p>
-
-                <script>
-                    let check_all = document.getElementById('check_all').addEventListener('click', () => {
-                        let checks = document.querySelectorAll('input[name="check"]').forEach(checks => {
-                            checks.checked = check_all.checked;
-                        });
-
-                    });
-
-                </script>
+                
                 <table class="tabela_produtos">
                     <tr>
                         <th>
@@ -59,11 +54,13 @@
                             <input type="checkbox" class="opcao">
                         </td>
                         <td>Nome do Produto</td>
-                        <td>Imagem</td>
+                        <td>
+                            <img src="" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
+                        </td>
                         <td></td>
-                        <td>Estoque</td>
-                        <td>Preço</td>
-                        <td>Descrição</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                         <td>---</td>
                         <td></td>
                         <td>
@@ -76,11 +73,13 @@
                             <input type="checkbox" class="opcao">
                         </td>
                         <td>Nome do Produto</td>
-                        <td>Imagem</td>
+                        <td>
+                            <img src="" alt="">
+                        </td>
                         <td></td>
-                        <td>Estoque</td>
-                        <td>Preço</td>
-                        <td>Descrição</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                         <td>---</td>
                         <td></td>
                         <td>
@@ -88,28 +87,7 @@
                             <button id="btn_excluir" name="btn_excluir">Excluir</button>
                         </td>
                     </tr>
-                    <tr>
 
-    
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const marcarTudo = document.getElementById("check_all");
-            const checkboxes = document.querySelectorAll(".opcao");
-    
-            marcarTudo.addEventListener("change", function () {
-                checkboxes.forEach(checkbox => {
-                    checkbox.checked = marcarTudo.checked;
-                });
-            });
-    
-            checkboxes.forEach(checkbox => {
-                checkbox.addEventListener("change", function () {
-                    marcarTudo.checked = [...checkboxes].every(c => c.checked);
-                });
-            });
-        });
-    </script>
-                    </tr>
                 </table>
             </div>
                 

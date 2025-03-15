@@ -92,6 +92,11 @@ div.header_produtos button{
     margin-left: 10px;
     font-size: large;
 }
+div.header_produtos input[type='text']{
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
 button#btn-busca{
     background-color: #4CAF50;
     color: white;
@@ -112,9 +117,56 @@ button#btn_organizar:hover{
     background-color: #2e6da4;
 }
 button#btn_organizar_novo{
+    background-color: #f5df1c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button#btn_organizar_novo:hover{
+    background-color: #bda119;
+}
+button#btn_adicionar{
     background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+button#btn_adicionar:hover{
+    background-color: #285f2b;
+}
+
+.produtos_tabelas table
+ th>input[type='checkbox']#check_all{
+    width: 15px;
+    height: 15px;
+}
+.produtos_tabelas table th{
+    background-color: #204028;
+    color: #fff;
+    padding: 10px;
+}
+
+.produtos_tabelas table>button{
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.produtos_tabelas table button#btn_editar{
+    font-weight: bold;
+    color: #ddd;
+    background-color: #4CAF50;
+    border: none;
+}
+
+.produtos_tabelas table button#btn_excluir{
+    font-weight: bold;
+    color: #ddd;
+    background-color: #f44336;
+    border: none;
+}
+.produtos_tabelas table button#btn_editar:hover{
+    background-color: #5c0c0c;
 }
