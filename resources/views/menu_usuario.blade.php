@@ -3,7 +3,6 @@
     <head>
         <link rel="icon" href="{{ asset('image/icon/icons8-pinheiro-162.png') }}" type="image/png">
         <meta charset="UTF-8">
-        <script type="module" src="{{ assert('js/produto') }}"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Meu Perfil</title>
         <link rel="stylesheet" href="{{ url('css/minha_conta.css') }}">

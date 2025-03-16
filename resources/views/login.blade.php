@@ -5,8 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login</title>
         <link rel="icon" href="{{ assert('image/icons8-pinheiro-162.png') }}" type="image/png">
-        <link rel="stylesheet" href="{{ assert('css/login.css') }}">
-        <link rel="stylesheet" href="{{ url('css/cadastro&login.css') }}">
+        <link rel="stylesheet" href="{{ url('css/login.css') }}">
     </head>
     <body>
         <header>

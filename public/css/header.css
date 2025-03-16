@@ -22,7 +22,7 @@ nav{
 }
 
 /* Logo */
-.logo img {
+.logo img, .user img {
     height: 80px;
     border-radius: 50%;
     transition: all 0.3s ease;
