@@ -6,7 +6,8 @@ main#main_usuario{
 
 
 .container_usuario{
-    width: 70%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 5%;
     margin-bottom: 5%;
     background-color: #fff;
@@ -21,6 +22,8 @@ main#main_usuario{
     align-content: center;
     justify-items: center;
     font-weight: bold;
+    color:#4CAF50;
+    font-family: arial;
 }
 
 .container_usuario .divisoria{
@@ -50,7 +53,7 @@ main#main_usuario{
     flex-direction: column;
     min-height: 450px;
     justify-content: space-between;
-    position: relative;
+    position: static;
     overflow: hidden;
     transition: all 0.2s ease;
     animation: fadeInUp 0.2s ease-out forwards;
@@ -63,29 +66,32 @@ main#main_usuario{
     justify-items: center;
     border-radius: 50%;
     width: 80%;
-    border:  8px solid #2c5837;
+    border:  4px solid #2c5837;
 }
 .produto .add_icon{
     align-content: center;
-    justify-items: center;
+
+    align-items: center;
 }
 
 .produto .editar {
-    background-color: green;
+    border:none;
+    background-color: silver;
     color: white;
     font-weight: bold;
-    border-radius: 24px;
+    border-radius: 10px;
     padding: 5px;
 }
 .produto .editar:hover{
-    background-color: yellowgreen;
+    background-color: green;
 }
 
 .produto .deletar {
-    background-color: red;
+    border:none;
+    background-color: silver;
     color: white;
     font-weight: bold;
-    border-radius: 24px;
+    border-radius: 10px;
     padding: 5px;
 }
 .produto .deletar:hover{
@@ -112,4 +118,32 @@ main#main_usuario{
     animation: fadeInUp 0.2s ease-out forwards;
     animation-delay: calc(var(--produto-index, 0) * 0.2s);
     opacity: 0;
+}
+
+p, h3{
+    font-family: sans-serif;
+}
+.menuP1{
+    display: grid;
+    grid-template-columns: auto auto; /* Garante que os itens fiquem lado a lado */
+    align-items: center; /* Centraliza verticalmente */
+
+    margin: auto;
+}
+
+.btn-hover {
+    border-style: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.btn-hover:hover svg {
+    fill: green; /* Muda a cor ao passar o mouse */
+}
+.profile{
+    margin-left: 50px;
+}
+
+nav{
+    font-family: sans-serif;
 }
