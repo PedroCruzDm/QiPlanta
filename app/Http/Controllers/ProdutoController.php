@@ -25,7 +25,7 @@ class ProdutoController extends Controller
     public function index()
     {
         $produtos = Produto::orderBy('id', 'desc')->get();
-        return view('controle-vendas', ['produtos' => $produtos]);
+        return view('controle_Vendas', ['produtos' => $produtos]);
     }
 
     public function edit(Request $request, $id)

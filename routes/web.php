@@ -63,8 +63,9 @@ Route::get('produtos/listar', [ProdutoController::class, 'listarControleVendas']
 
 Route::post('qrcode/generate', [QRCodeController::class, 'generate'])->name('qrcode.generate');
 
+Route::get('qrcode', [QRCodeController::class, 'showQRCodeForm'])->name('qrcode.form');
+Route::get('qrcode', [QRCodeController::class, 'index'])->name('qrcode.index');
 
-// Route::get('qrcode', [QRCodeController::class, 'index'])->name('qrcode.index');
 // Route::get('qrcode/download/{filename}', [QRCodeController::class, 'download'])->name('qrcode.download');
 // Route::get('qrcode/visualizar/{id}', [QRCodeController::class, 'visualizar'])->name('qrcode.visualizar');
 // Route::get('qrcode/atualizar/{id}', [QRCodeController::class, 'atualizar'])->name('qrcode.atualizar');
