@@ -23,7 +23,7 @@ nav{
 }
 
 /* Logo */
-.logo img, .user img {
+.logo img{
     height: 80px;
     border-radius: 50%;
     transition: all 0.3s ease;

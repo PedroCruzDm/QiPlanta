@@ -140,10 +140,6 @@ p, h3{
 .btn-hover:hover svg {
     fill: green; /* Muda a cor ao passar o mouse */
 }
-.profile{
-    margin-left: 50px;
-}
-
 nav{
     font-family: sans-serif;
 }
