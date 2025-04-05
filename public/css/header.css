@@ -1,7 +1,7 @@
 body, html {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Remove o scroll horizontal */
+    overflow-x: hidden;
     width: 100%;
     box-sizing: border-box;
 }
@@ -12,21 +12,21 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw; /* Ocupa 100% da largura da viewport */
-    max-width: 100%; /* Impede que o header ultrapasse a largura máxima */
+    width: 100vw;
+    max-width: 100%;
     background: linear-gradient(8deg, #397348 0%, #2c5837 30%, #204028 100%);
-    gap: 10px; /* Espaçamento inicial entre itens */
+    gap: 10px;
     box-sizing: border-box;
 }
-nav{
+
+nav {
     font-weight: bolder;
 }
 
 /* Logo */
-.logo img{
+.logo img {
     height: 80px;
     border-radius: 50%;
-    transition: all 0.3s ease;
     border: 3px solid transparent;
 }
 
@@ -35,14 +35,14 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px; /* Espaçamento inicial para itens de navegação */
+    gap: 30px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 20px; /* Espaço entre os itens do menu */
+    gap: 20px;
     padding: 0;
     margin: 0;
 }
@@ -50,12 +50,11 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     color: #ffffff;
-    transition: all 0.3s ease;
     position: relative;
 }
 
 nav ul li a span {
-    display: block; /* Mostra o texto dos itens */
+    display: block;
 }
 
 nav ul li a i {
@@ -70,15 +69,15 @@ nav ul li a::after {
     bottom: 0;
     left: 0;
     background-color: #ffffff;
-    transition: width 0.3s ease;
 }
 
+/* Hover removido */
 nav ul li a:hover::after {
-    width: 100%;
+    width: 0;
 }
 
 nav ul li a:hover {
-    transform: translateY(-2px);
+    transform: none;
 }
 
 /* Dropdown */
@@ -97,14 +96,13 @@ nav ul li a:hover {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    transform: translateY(20px);
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
 }
 
 .dropdown:hover ul {
-    transform: translateY(0);
+    transform: none;
     opacity: 1;
     visibility: visible;
 }
@@ -121,22 +119,21 @@ nav ul li a:hover {
 }
 
 .dropdown ul li:hover {
-    background-color: #f1f1f1;
+    background-color: inherit;
 }
 
 /* Barra de Pesquisa */
 .search-bar {
     height: 40px;
     display: grid;
-    grid-template-columns: auto auto; /* Garante que os itens fiquem lado a lado */
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
 }
 
 .input-busca {
     height: 100%;
-    transition: all 0.3s ease;
-    min-width: 150px; /* Evita que fique muito pequeno */
+    min-width: 150px;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
     border-top-left-radius: 5px;
@@ -148,8 +145,8 @@ nav ul li a:hover {
 
 .input-busca:focus {
     width: 250px;
-    border-color: #3e9473;
-    box-shadow: 0 0 10px rgba(62, 148, 115, 0.3);
+    border-color: inherit;
+    box-shadow: none;
     outline: none;
 }
 
@@ -161,40 +158,38 @@ nav ul li a:hover {
     border: none;
     color: white;
     cursor: pointer;
-    transition: all 0.2s ease;
     border-bottom-right-radius: 6px;
     border-top-right-radius: 6px;
 }
 
 .search-bar button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(62, 148, 115, 0.5);
+    transform: none;
+    box-shadow: none;
 }
 
-/* Responsivo: Ícones em vez de texto para telas pequenas */
+/* Responsivo */
 @media (max-width: 768px) {
     header {
         padding-top: 0px;
         height: auto;
     }
 
-    /* Oculta o texto das opções e mostra apenas os ícones */
     nav ul li a span {
         display: none;
     }
 
     nav ul li a i {
-        font-size: 2rem; /* Aumenta o tamanho do ícone */
+        font-size: 2rem;
     }
 
     .logo img {
-        height: 50px; /* Reduz o tamanho da logo */
+        height: 50px;
     }
 }
 
 @media (max-width: 800px) {
     .search-bar {
-        display: none; /* Opcional: oculta a barra de pesquisa em telas pequenas */
+        display: none;
     }
 }
 
@@ -211,7 +206,8 @@ nav ul li a:hover {
         justify-content: center;
     }
 }
-svg{
+
+svg {
     display: block;
     margin: auto;
 }

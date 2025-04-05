@@ -1,13 +1,17 @@
-/* Reset básico para remover margens/paddings padrão */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --text-color: aliceblue;
+}
+
 body {
     line-height: 1.6;
     min-height: 100vh;
-    color: aliceblue;
+    color: var(--text-color);
     display: flex;
     flex-direction: column;
     background-size: cover;
@@ -17,21 +21,9 @@ body {
     background-image: url('./../image/Teste-Background.png');
     margin: 0;
     padding: 0;
-    animation: fadeIn 1s ease-out;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-main{
+main {
     flex: 1;
     display: flex;
     align-items: center;
@@ -46,43 +38,36 @@ main{
     margin: 40px auto;
     padding: 40px;
     border-radius: 24px;
-    background-color: rgba(97, 161, 102, 0.5);
-    box-shadow: 0px 4px 12px rgba(74, 250, 58, 0.6);
-    backdrop-filter: blur(5px);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #61a166;
 }
 .container-cadastro {
     width: 90%;
     max-width: 900px;
     margin: 40px auto;
     padding: 40px;
-    background-color: rgba(97, 161, 102, 0.5);
+    background-color: #63a168;
     border-radius: 24px;
-    box-shadow: 0px 4px 12px rgba(74, 250, 58, 0.8);
-    backdrop-filter: blur(5px);
 }
 
-.divisoria {    /* Divisória de login */
+.divisoria {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     gap: 40px;
     width: 100%;
     padding: 20px;
-    animation: slideIn 0.8s ease-out;
 }
-.div-login-cadastro {     /* Caixa de cadastro no login */
+.div-login-cadastro {
     flex: 1;
     padding: 30px;
     margin-right: 40px;
     text-align: center;
-    box-shadow: inset -2px 0 0 rgba(240, 240, 240, 0.3);
     align-self: stretch;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.titulo-login h2{
+.titulo-login h2 {
     font-size: 34px;
     margin-bottom: 20px;
     color: aliceblue;
@@ -90,7 +75,7 @@ main{
 
 .login-btn {
     background-color: #4CAF50;
-    color: white;
+    color: var(--text-color);
     border: none;
     padding: 16px 32px;
     font-size: 16px;
@@ -98,13 +83,12 @@ main{
     cursor: pointer;
     width: 100%;
     margin-top: 30px;
-    transition: background-color 0.3s ease;
 }
 .login-btn:hover {
     background-color: #45a049;
 }
 
-.divisoria-cadastro-login{
+.divisoria-cadastro-login {
     display: flex;
     align-items: center;
 }
@@ -114,32 +98,28 @@ main{
     margin-top: 4%;
     padding: 2%;
     margin-bottom: 10px;
-    color: aliceblue;
+    color: var(--text-color);
 }
 
 .caixa-cadastro-login h2:hover {
     transform: scale(1.05);
 }
 
-
 .caixa-cadastro-login p {
     font-size: 15px;
     margin-bottom: 30px;
-    color: aliceblue;
-    animation: fadeIn 0.8s ease-out forwards;
-    animation-delay: 0.3s;
+    color: var(--text-color);
 }
 
 /* Botão de cadastro */
 .btn-cadastro-login {
     background-color: #4CAF50;
-    color: white;
+    color: var(--text-color);
     border: none;
     padding: 16px 32px;
     font-size: 16px;
     border-radius: 8px;
     cursor: pointer;
-    transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
 }
@@ -152,17 +132,11 @@ main{
     width: 100%;
     height: 100%;
     background: linear-gradient(120deg, transparent, rgba(255,255,255,0.3), transparent);
-    transition: 0.5s;
 }
 
-.btn-cadastro-login:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
-}
 .btn-cadastro-login:hover:before {
     left: 100%;
 }
-
 
 /* Inputs do formulário */
 .form-input {
@@ -172,16 +146,12 @@ main{
     border: 2px solid transparent;
     border-radius: 6px;
     font-size: 16px;
-    transition: all 0.3s ease;
-    background: rgba(255, 255, 255, 0.9);
 }
 .form-input:focus {
     border-color: #4CAF50;
-    box-shadow: 0 0 8px rgba(76, 175, 80, 0.4);
-    transform: translateY(-2px);
 }
+
 /* Botão de login */
-/* Botão de login animado */
 .login-btn {
     background: linear-gradient(45deg, #4CAF50, #45a049);
     color: white;
@@ -192,7 +162,6 @@ main{
     cursor: pointer;
     width: 100%;
     margin-top: 20px;
-    transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
 }
@@ -205,44 +174,35 @@ main{
     width: 100%;
     height: 100%;
     background: linear-gradient(120deg, transparent, rgba(255,255,255,0.3), transparent);
-    transition: 0.5s;
-}
-
-.login-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
 }
 
 .login-btn:hover:before {
     left: 100%;
 }
 
-/* Ajustes de layout responsivo com animações */
+/* Ajustes de layout responsivo */
 @media (max-width: 768px) {
     .divisoria-login {
         flex-direction: column;
-        animation: fadeIn 0.8s ease-out;
     }
 
     .div-login-centro {
         margin-right: 0;
         border-right: none;
         border-bottom: 2px solid rgba(240, 240, 240, 0.5);
-        transition: transform 0.3s ease;
     }
-    
+
     .container {
         margin-top: 15%;
         margin-bottom: 15%;
     }
 }
 
-/* Ajustes de layout responsivo */
 @media (max-width: 768px) {
     main {
         padding: 40px 20px;
     }
-    
+
     .container-login {
         margin: 20px auto;
         padding: 20px;
@@ -267,7 +227,6 @@ main{
     }
 }
 
-/* Ajuste específico para a página de cadastro */
 .container-cadastro .divisoria {
     gap: 60px;
     align-items: flex-start;
@@ -287,13 +246,12 @@ main{
     padding: 20px;
 }
 
-/* Media queries para responsividade */
 @media (max-width: 768px) {
     .container-cadastro {
         margin: 20px auto;
         padding: 20px;
     }
-    
+
     .container-cadastro .divisoria {
         gap: 30px;
     }
@@ -303,14 +261,4 @@ main{
     .container-cadastro {
         margin: 20px auto;
     }
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }    
-}
-
-@keyframes slideIn {
-    from { transform: translateX(-100px); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
 }

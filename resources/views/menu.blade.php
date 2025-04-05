@@ -23,14 +23,6 @@
 
         <main>
 
-            <div class="centralizar_txt">
-                <center>
-                    <h2 style="font-size: 40px;">Bem-vindo à Central da <strong style="color:green">Vida</strong>!</h2>
-                    <p style="font-size: 20px; color: #555;">Transforme seu ambiente com o poder das plantas. Aqui, cada espécie tem uma história para contar.</p>
-
-                </center>
-            </div>
-
             <div class="container mt-4 mb-5">
                 <div id="carouselProdutos" class="carousel slide" data-bs-ride="carousel" style="max-width: 800px; margin: 0 auto;">
 

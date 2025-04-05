@@ -1,9 +1,3 @@
-@import url('animation.css');
-.content {
-    animation: pageLoad 1s ease-out forwards, fadeIn 1.2s ease-in;
-}
-
-/* Center content and fix spacing */
 main {
     min-height: 100vh;
     width: 100%;
@@ -14,9 +8,8 @@ main {
     justify-content: center;
     padding: 2rem 0;
     box-sizing: border-box;
-    animation: fadeIn 0.5s ease-in forwards;
 }
-body{
+
+body {
     background: url('./../image/Teste-Background.png') center/cover no-repeat;
-    animation: fadeIn 0.5s ease-in forwards;
 }

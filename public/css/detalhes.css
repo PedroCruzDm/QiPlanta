@@ -74,15 +74,17 @@ main {
     font-size: 1.2rem;
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.3s ease;
     margin-top: 20px;
 }
 
+/* Removido hover e efeitos */
+/*
 .adicionar-carrinho:hover {
     background-color: #2d5938;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(45, 89, 56, 0.2);
 }
+*/
 
 .produto-video {
     grid-column: 1 / -1;

@@ -8,46 +8,35 @@ body {
     min-height: 100vh;
     text-align: center;
 }
+
 .container {
     padding: 2rem;
     background-color: rgb(4, 199, 134);
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    animation: fadeIn 1s ease-in;
 }
+
 .logo {
     width: 200px;
     margin-bottom: 2rem;
-    animation: bounce 2s infinite;
 }
+
 h1 {
     color: #ffffff;
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
+
 .message {
     font-size: 1.5rem;
     color: #ffffff;
     margin-bottom: 2rem;
 }
+
 .btn-home {
     background-color: #ffffff;
     color: rgb(21, 44, 38);
     padding: 12px 24px;
     text-decoration: none;
     border-radius: 25px;
-    transition: all 0.3s ease;
-}
-.btn-home:hover {
-    background-color: #2e7d32;
-    color: #ffffff;
-    transform: scale(1.05);
-}
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-@keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-15px); }
 }

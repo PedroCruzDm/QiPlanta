@@ -14,9 +14,9 @@
 
         <main>
         <div class="container-cadastro">
-            <div class="divisoria" style="color:antiquewhite;">
-                <div> <!-- forms -->
-
+            <div class="divisoria">
+                
+                <div>
                     <form action="" method="POST">
                             <center>
                                 <h1>Cadastro de Cliente </h1><br>
@@ -35,20 +35,16 @@
                         <input class="form-input" type="number" id="numcell" name="numcell" placeholder="(xx) xxx xxx xxx" required>
                         
                         <div class="divisoria">
-                            <div><!--senha -->
+                            <div>
                                 <label for="password">Senha:</label><br>
                                 <input class="form-input" type="password" id="senha" name="senha" placeholder="Insira uma senha" required>
                             </div>
 
-                            <div><!--confirmar senha -->
+                            <div>
                                 <label for="password">Repita sua senha:</label><br>
                                 <input class="form-input" type="password" id="senha2" name="senha2" placeholder="Confirme sua senha" required>
                             </div>
                         </div>
-                        
-                        
-                        <input type="checkbox" name="robot" id="robot" required>
-                        <label>Não sou um robo</label>
                         
                         <div style="left:10px;">
                             <button class="login-btn" id="btn-cadastro" type="submit" value="Cadastrar">Cadastrar</button>

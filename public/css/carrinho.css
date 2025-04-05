@@ -7,7 +7,7 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Define que a altura mínima do body é 100% da altura da tela */
+    min-height: 100vh;
 }
 
 main {
@@ -17,7 +17,7 @@ main {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    flex: 1; /* Faz com que o main ocupe o espaço disponível */
+    flex: 1;
 }
 
 /* Estilo da div principal do carrinho de compras */
@@ -60,7 +60,7 @@ ul.lista-carrinho li {
 }
 
 .produto img {
-    margin-top: 10px; /* faz uma margem na parte de cima da img */
+    margin-top: 10px;
     width: 80px;
     height: 80px;
     object-fit: cover;
@@ -82,39 +82,31 @@ ul.lista-carrinho li {
 }
 
 /* Botões */
-.btn-decrementar, .btn-incrementar, .btn-finalizar-compra {
+.btn-decrementar,
+.btn-incrementar,
+.btn-finalizar-compra {
     padding: 10px 20px;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    /* Removido: transition */
 }
 
 .btn-decrementar {
     background-color: red;
 }
 
-.btn-decrementar:hover {
-    background-color: #810101;
-}
-
+/* Removido hover */
 .btn-incrementar {
     background-color: green;
 }
 
-.btn-incrementar:hover {
-    background-color: #014d01;
-}
-
+/* Removido hover */
 .btn-finalizar-compra {
     background-color: #4CAF50;
     margin-top: 20px;
-}
-
-.btn-finalizar-compra:hover {
-    background-color: #388E3C;
 }
 
 /* Footer */

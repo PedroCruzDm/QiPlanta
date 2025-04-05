@@ -17,3 +17,38 @@
 @import url('sobre.css');
 @import url('minha_conta.css');
 @import url('controle_vendas.css');
+
+:root{
+    /*Paleta de cores*/
+
+    /*Principais*/
+    --primary-color: #4CAF50;
+    --secudary-color: #61a16680;
+    --tertiary-color: #f0f0f0;
+    
+    /*Modo claro*/
+    --primary-hover: #45a049;
+
+    --primary-text-color: aliceblue;
+    --secondary-text-color: #333;
+
+    --container-bg-white: #f0f0f0;
+    --container-bg-white-10: #e0e0e0;
+    --container-bg-white-30: #bababa;
+    --container-bg-white-50: #a0a0a0;
+    --container-bg-white-70: #808080;
+    --container-bg-white-90: #606060;
+    --container-bg-10: #63a168;
+    --container-bg-90: #61a16680;
+    
+    --input-bg: #ffffffe6;
+}
+
+/* Estilos globais */
+*body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}

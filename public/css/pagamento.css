@@ -96,21 +96,6 @@ button {
     color: white;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #218838;
-}
-
-button:active {
-    background-color: #1e7e34;
-}
-
-.progress-bar {
-    width: 100%;
-    height: 20px;
-    margin-top: 10px;
 }
 
 /* Estilo do formulário de pagamento */
@@ -120,8 +105,7 @@ button:active {
     padding: 30px;
     width: 100%;
     max-width: 480px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Foco em inputs e selects */
@@ -129,13 +113,12 @@ input:focus,
 select:focus {
     border-color: #2ecc71;
     background-color: #fff;
-    box-shadow: 0 0 0 4px rgba(46, 204, 113, 0.1);
     outline: none;
 }
 
 /* Estilo para o botão de envio */
 #form-checkout__submit {
-    background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+    background: #2ecc71;
     color: white;
     padding: 14px 28px;
     font-size: 1.1rem;
@@ -144,16 +127,6 @@ select:focus {
     border-radius: 8px;
     cursor: pointer;
     width: 100%;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-#form-checkout__submit:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(46, 204, 113, 0.3);
-}
-
-#form-checkout__submit:active {
-    transform: translateY(0);
 }
 
 /* Estilo da barra de progresso */
@@ -177,13 +150,12 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-    background: linear-gradient(90deg, #2ecc71 0%, #27ae60 100%);
+    background: #2ecc71;
     border-radius: 5px;
-    transition: width 0.3s ease;
 }
 
 progress::-moz-progress-bar {
-    background: linear-gradient(90deg, #2ecc71 0%, #27ae60 100%);
+    background: #2ecc71;
     border-radius: 5px;
 }
 

@@ -10,62 +10,61 @@ body {
 
 .container {
     display: flex;
-    flex-direction: column; /* Organiza os itens na vertical */
-    align-items: center; /* Alinha tudo ao centro */
-    justify-content: center; /* Centraliza o conteúdo na vertical */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: white;
     margin: 10% auto;
-    padding: 40px; /* Aumentei um pouco o padding para dar mais espaço */
-    border-radius: 12px; /* Cantos arredondados */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Adicionando sombra para destacar o painel */
-    width: 60%; /* Ajuste a largura do painel conforme necessário */
-    max-width: 600px; /* Definindo um tamanho máximo para o container */
-    text-align: center; /* Centraliza o texto */
-    border: 1px solid #e0e0e0; /* Adicionando uma borda suave */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    max-width: 600px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
 }
 
 .Flowey {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 250px; /* Aumentei a largura da imagem */
+    width: 250px;
     height: auto;
-    margin-bottom: 0px; /* Espaço entre a imagem e a mensagem */
+    margin-bottom: 0px;
 }
 
 .Flowey img {
-    width: 100%; /* Faz a imagem ocupar toda a largura do contêiner Flowey */
+    width: 100%;
     height: auto;
-    max-width: 300px; /* Definindo um limite máximo para o tamanho da imagem */
+    max-width: 300px;
 }
+
 .Verdinho {
     position: relative;
     display: inline-block;
-    color: #333; /* Cor padrão */
+    color: #333;
     font-size: 2em;
     font-weight: bold;
-    overflow: hidden; /* Garante que o brilho não ultrapasse as letras */
-    transition: color 0.4s ease; /* Transição suave na cor do texto */
+    overflow: hidden;
+    /* Removido: transition */
 }
 
-/* Criando o brilho deslizante */
+/* Removido o brilho animado */
 .Verdinho::after {
     content: '';
     position: absolute;
     top: 0;
-    left: -100%; /* Começa fora do texto, à esquerda */
+    left: 0; /* Parado no mesmo lugar */
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, #009572, transparent); /* Gradiente verde que cria o brilho */
-    transition: left 0.4s ease; /* Controla a animação do brilho deslizando */
-    z-index: -1; /* Coloca o brilho atrás do texto */
+    background: none; /* Removido o gradiente animado */
+    z-index: -1;
 }
 
-/* Mudança de cor do texto e animação do brilho */
 .Verdinho:hover {
-    color: #009572; /* Cor do texto ao passar o mouse */
+    color: #009572;
 }
 
 .Verdinho:hover::after {
-    left: 100%; /* Faz o brilho deslizar da esquerda para a direita */
+    left: 0;
 }
