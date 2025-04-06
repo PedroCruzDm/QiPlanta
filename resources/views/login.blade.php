@@ -19,7 +19,7 @@
                 <div class="div-login-cadastro">
                     <div class="caixa-cadastro-login">
                         <h2 style="margin-top:15px;">Cadastrar-se</h2><br>
-                        <p>Ainda não possui uma conta em nosso site?</p> <!--[Pedro]: texto teste, podem escolher o que colocar-->
+                        <p>Ainda não possui uma conta em nosso site?</p>
                     </div>
                     <div class="div-btn-cadastro-login">
                         <button type="button" class="btn-cadastro-login" onclick="window.location.href = './cadastro'">Cadastrar</button>

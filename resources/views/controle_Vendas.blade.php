@@ -49,44 +49,40 @@
                         <th>Criação</th>
                         <th>Ações</th>
                     </tr>
+                        'produtos' => $produtos
+                    @foreach ($produtos as $produtos)
                     <tr>
                         <td>
                             <input type="checkbox" class="opcao">
                         </td>
-                        <td>Nome do Produto</td>
+                        <td>{{ $produtos->nome }}</td>
                         <td>
-                            <img src="" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
+                            <img src="{{ asset('storage/' . $produtos->imagem) }}" alt="Imagem do Produto" class="imagem-produto">
                         </td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>---</td>
-                        <td></td>
+                        <td>
+                            <video width="100" height="100" controls>
+                                <source src="{{ asset('storage/' . $produtos->video) }}" type="video/mp4">
+                                Seu navegador não suporta o elemento de vídeo.
+                            </video>
+                        </td>
+                        <td>{{ $produtos->estoque }}</td>
+                        <td>{{ $produtos->preco }}</td>
+                        <td>{{ $produtos->descricao }}</td>
+                        <td>
+                            @if ($produtos->status == 1)
+                                <b style="color: green;">Ativo</b>
+                            @else
+                                <b style="color: red;">Inativo</b>
+                            @endif
+                        </td>
+                        <td>{{ $produtos->created_at }}</td>
                         <td>
                             <button id="btn_editar" name="btn_editar">Editar</button>
                             <button id="btn_excluir" name="btn_excluir">Excluir</button>
                         </td>
                     </tr>
-                    <tr>
-                        <td>
-                            <input type="checkbox" class="opcao">
-                        </td>
-                        <td>Nome do Produto</td>
-                        <td>
-                            <img src="" alt="">
-                        </td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>---</td>
-                        <td></td>
-                        <td>
-                            <button id="btn_editar" name="btn_editar">Editar</button>
-                            <button id="btn_excluir" name="btn_excluir">Excluir</button>
-                        </td>
-                    </tr>
+                    
+                    @endforeach
 
                 </table>
             </div>
