@@ -32,7 +32,7 @@
 
             </div>
             <div class="produtos_tabelas">
-                <p>Produtos: <?php echo("");?></p>
+                <p>Produtos: <?php echo $produtos->count(); ?></p>
                 
                 <table class="tabela_produtos">
                     <tr>
@@ -49,7 +49,6 @@
                         <th>Criação</th>
                         <th>Ações</th>
                     </tr>
-                        'produtos' => $produtos
                     @foreach ($produtos as $produtos)
                     <tr>
                         <td>
@@ -57,13 +56,18 @@
                         </td>
                         <td>{{ $produtos->nome }}</td>
                         <td>
-                            <img src="{{ asset('storage/' . $produtos->imagem) }}" alt="Imagem do Produto" class="imagem-produto">
+                            <img src="{{ asset('storage/' . $produtos->imagem) }}" alt="{{ $produtos->nome }}" class="imagem-produto">
                         </td>
                         <td>
+                            @if($produtos->video == null)
+                                <p>Sem vídeo</p>
+                            @else
+
                             <video width="100" height="100" controls>
                                 <source src="{{ asset('storage/' . $produtos->video) }}" type="video/mp4">
                                 Seu navegador não suporta o elemento de vídeo.
                             </video>
+                            @endif
                         </td>
                         <td>{{ $produtos->estoque }}</td>
                         <td>{{ $produtos->preco }}</td>
