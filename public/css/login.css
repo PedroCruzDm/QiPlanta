@@ -9,19 +9,6 @@
     --border-color: rgba(255, 255, 255, 0.2);
     --shadow-color: rgb(49, 163, 38);
 }
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Reset mais moderno */
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -36,7 +23,21 @@ body {
     flex-direction: column;
     background: url('./../image/Teste-Background.png') center/cover no-repeat;
     font-family: 'Arial', sans-serif;
-}
+    background-color: #f0f5f1;
+    animation: fadeIn 0.5s ease-in;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
 
 main {
     flex: 1;

@@ -12,14 +12,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw; /* Ocupa 100% da largura da viewport */
     max-width: 100%; /* Impede que o header ultrapasse a largura máxima */
-    background: linear-gradient(8deg, #397348 0%, #2c5837 30%, #204028 100%);
+    background: #2c5837;
     gap: 10px; /* Espaçamento inicial entre itens */
     box-sizing: border-box;
-}
-nav{
-    font-weight: bolder;
+     font-weight: bolder;
 }
 
 /* Logo */
@@ -31,14 +28,14 @@ nav{
 }
 
 /* Navegação */
-nav {
+header {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px; /* Espaçamento inicial para itens de navegação */
 }
 
-nav ul {
+header ul {
     list-style: none;
     display: flex;
     align-items: center;
@@ -47,22 +44,22 @@ nav ul {
     margin: 0;
 }
 
-nav ul li a {
+header ul li a {
     text-decoration: none;
     color: #ffffff;
     transition: all 0.3s ease;
     position: relative;
 }
 
-nav ul li a span {
+header ul li a span {
     display: block; /* Mostra o texto dos itens */
 }
 
-nav ul li a i {
+header ul li a i {
     font-size: 1.2rem;
 }
 
-nav ul li a::after {
+header ul li a::after {
     content: '';
     position: absolute;
     width: 0;
@@ -72,12 +69,11 @@ nav ul li a::after {
     background-color: #ffffff;
     transition: width 0.3s ease;
 }
-
-nav ul li a:hover::after {
+header ul li a:hover::after {
     width: 100%;
 }
 
-nav ul li a:hover {
+Header ul li a:hover {
     transform: translateY(-2px);
 }
 
@@ -179,11 +175,11 @@ nav ul li a:hover {
     }
 
     /* Oculta o texto das opções e mostra apenas os ícones */
-    nav ul li a span {
+    header ul li a span {
         display: none;
     }
 
-    nav ul li a i {
+    header ul li a i {
         font-size: 2rem; /* Aumenta o tamanho do ícone */
     }
 

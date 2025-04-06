@@ -4,7 +4,20 @@ body {
     padding: 0;
     background: url('./../image/Teste-Background.png') center/cover no-repeat;
     min-height: 100vh;
-}
+    background-color: #f0f5f1;
+    animation: fadeIn 0.5s ease-in;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
 
 .blog-container {
     max-width: 1200px;

@@ -16,16 +16,23 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
+    margin: 0;
+    background-color: #f0f5f1;
+    animation: fadeIn 0.5s ease-in;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
 
 
-
-/* Estilo para o cabeçalho */
-header {
-    background-color: #4CAF50;
-    padding: 20px;
-    text-align: center;
-}
 
 header h1 {
     color: #fff;
@@ -39,7 +46,6 @@ header h1 {
     background-color: rgba(97, 161, 102, 0.5); /* Fundo cinza com menos opacidade */
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0px 4px 12px rgba(74, 250, 58, 0.8);
     backdrop-filter: blur(5px); /* Efeito de desfoque */
 }
 

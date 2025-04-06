@@ -65,7 +65,47 @@
         <selection class="anuncios">
 
         </selection>
+        <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
 
+    <title>Categorias - Marketplace</title>
+    <link rel="stylesheet" href="{{ url('css/categorias.css') }}">
+</head>
+    <main>
+        <section class="categorias">
+            <h2 class="titulo">Explore Nossas Categorias</h2>
+            <div class="grid-categorias">
+                <div class="categoria">
+                    <img src="{{url('image/plantas.png')}}" alt="Plantas" class="categoria-img">
+                    <h3>Plantas</h3>
+                    <p>Variedade de plantas para alegrar seu espaço.</p>
+                    <a href="{{url('produtos?categoria=plantas')  }}" class="btn">Ver Produtos</a>
+                </div>
+
+                <div class="categoria">
+                    <img src="{{ url('image/flores.png') }}" alt="Flores" class="categoria-img">
+                    <h3>Flores</h3>
+                    <p>Flores lindas para todas as ocasiões.</p>
+                    <a href="{{url('produtos?categoria=flores')  }}" class="btn">Ver Produtos</a>
+                </div>
+
+                <div class="categoria">
+                    <img src="{{ url('image/ferramentas.png') }}" alt="Ferramentas" class="categoria-img">
+                    <h3>Ferramentas</h3>
+                    <p>Equipamentos essenciais para cuidar do seu jardim.</p>
+                    <a href="{{ url('produtos?categoria=ferramentas') }}" class="btn">Ver Produtos</a>
+                </div>
+
+                <div class="categoria">
+                    <img src="{{ url('image/vasos.png') }}" alt="Vasos" class="categoria-img">
+                    <h3>Vasos</h3>
+                    <p>Estilosos e funcionais para suas plantas.</p>
+                    <a href="{{ url('produtos?categoria=vasos') }}" class="btn">Ver Produtos</a>
+                </div>
+
+                <!-- Adicione mais categorias conforme necessário -->
+            </div>
+        </section>
         </main>
 
         <footer>

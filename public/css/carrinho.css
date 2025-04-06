@@ -7,8 +7,21 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Define que a altura mínima do body é 100% da altura da tela */
-}
+    min-height: 100vh;
+    background-color: #f0f5f1;
+    animation: fadeIn 0.5s ease-in;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
 
 main {
     margin: 5% auto;

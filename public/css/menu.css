@@ -3,6 +3,19 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     background-color: #f0f5f1;
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Animação do fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Container principal */
@@ -15,7 +28,7 @@ body {
     gap: 30px;
 }
 
-/* Título principal com animação */
+/* Título principal */
 .anuncios h2 {
     grid-column: 1 / -1;
     font-size: 2.5em;
@@ -112,9 +125,9 @@ body {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
-    -webkit-user-select: none; /* para  usuario n selecionar <a> 21/11/24*/
-    -ms-user-select: none; 
-    user-select: none; /*fim*/
+    -webkit-user-select: none; /* Desabilita seleção */
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .produto button::after {
@@ -138,7 +151,7 @@ body {
     width: 100%;
 }
 
-/* Modal/Pop-up (adicione o HTML correspondente) */
+/* Modal/Pop-up */
 .modal {
     display: none;
     position: fixed;
@@ -182,4 +195,120 @@ body {
     .produto {
         margin: 10px;
     }
+}
+
+/* Título da página */
+.titulo {
+    text-align: center;
+    font-size: 40px;
+    margin: 20px 0;
+    color: #2d5938;
+}
+
+/* Seção de categorias */
+.categorias {
+    padding: 20px;
+    background-color: #f0f5f1;
+}
+
+.grid-categorias {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cards de categoria */
+.categoria {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 24px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.categoria::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(7, 145, 76, 0.1), rgba(45, 89, 56, 0.1));
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.categoria:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(7, 145, 76, 0.2);
+}
+
+.categoria:hover::before {
+    opacity: 1;
+}
+
+.categoria-img {
+    border-radius: 50%;
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 15px;
+    transition: transform 0.4s ease;
+}
+
+.categoria:hover .categoria-img {
+    transform: scale(1.1);
+}
+
+h3 {
+    font-size: 24px;
+    color: #2d5938;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Botão das categorias */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    background-color: #07914c;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.2);
+    transition: width 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2d5938;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(7, 145, 76, 0.3);
+}
+
+.btn:hover::after {
+    width: 100%;
 }
