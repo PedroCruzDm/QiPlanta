@@ -46,7 +46,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="mt-5">
         @include('include.footer')
     </footer>
 </body>
