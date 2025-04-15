@@ -82,3 +82,4 @@ Route::get('qrcode', [QRCodeController::class, 'index'])->name('qrcode.index');
 // Route::get('user/editar/{id}', [UserController::class, 'edit'])->name('user.editar');
 // Route::get('user/atualizar/{id}', [UserController::class, 'atualizar'])->name('user.atualizar');
 // Route::get('user/visualizar/{id}', [UserController::class, 'visualizar'])->name('user.visualizar');
+
