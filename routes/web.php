@@ -66,19 +66,9 @@ Route::post('qrcode/generate', [QRCodeController::class, 'generate'])->name('qrc
 Route::get('qrcode', [QRCodeController::class, 'showQRCodeForm'])->name('qrcode.form');
 Route::get('qrcode', [QRCodeController::class, 'index'])->name('qrcode.index');
 
-// Route::get('qrcode/download/{filename}', [QRCodeController::class, 'download'])->name('qrcode.download');
-// Route::get('qrcode/visualizar/{id}', [QRCodeController::class, 'visualizar'])->name('qrcode.visualizar');
-// Route::get('qrcode/atualizar/{id}', [QRCodeController::class, 'atualizar'])->name('qrcode.atualizar');
-// Route::get('qrcode/editar/{id}', [QRCodeController::class, 'edit'])->name('qrcode.editar');
-// Route::get('qrcode/destroy/{id}', [QRCodeController::class, 'destroy'])->name('qrcode.destroy');
-// Route::get('qrcode/listar', [QRCodeController::class, 'listarControleVendas'])->name('qrcode.listar');
-// Route::get('qrcode/gerar', [QRCodeController::class, 'gerar'])->name('qrcode.gerar');
-
-// Route::post('user/store', [UserController::class, 'store'])->name('user.store');
-// Route::get('user', [UserController::class, 'index'])->name('user.index');
-// Route::post('user/edit/{id}', [UserController::class, 'edit'])->name('user.edit');
-// Route::get('user/listar', [UserController::class, 'listarControleVendas'])->name('user.listar');
-// Route::get('user/destroy/{id}', [UserController::class, 'destroy'])->name('user.destroy');
-// Route::get('user/editar/{id}', [UserController::class, 'edit'])->name('user.editar');
-// Route::get('user/atualizar/{id}', [UserController::class, 'atualizar'])->name('user.atualizar');
-// Route::get('user/visualizar/{id}', [UserController::class, 'visualizar'])->name('user.visualizar');
+// Rotas para UserController
+Route::get('usuarios', [UserController::class, 'index'])->name('usuarios.index');
+Route::get('usuarios/{id}', [UserController::class, 'show'])->name('usuarios.show');
+Route::post('usuarios', [UserController::class, 'store'])->name('usuarios.store');
+Route::put('usuarios/{id}', [UserController::class, 'update'])->name('usuarios.update');
+Route::delete('usuarios/{id}', [UserController::class, 'destroy'])->name('usuarios.destroy');
