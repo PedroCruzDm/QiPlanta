@@ -29,11 +29,16 @@ class UserController extends Controller
 	// Cria um novo usuário
 	public function store(Request $request)
 	{
+
+
 		$validatedData = $request->validate([
 			'name' => 'required|string|max:255',
 			'email' => 'required|email|unique:users,email',
 			'password' => 'required|string|min:6',
+			'endereco' => 'required|string|max:255', // Validação do endereço
+			'numcell' => 'required|string|max:15',  // Validação do número do celular
 		]);
+
 
 		$user = User::create([
 			'name' => $validatedData['name'],
