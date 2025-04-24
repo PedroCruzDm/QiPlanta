@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -13,6 +14,21 @@ class UserController extends Controller
 		$users = User::all();
 		return response()->json($users);
 	}
+
+	public function login(Request $request)
+	{
+		$credentials = $request->only('email', 'password');
+
+		if (Auth::attempt($credentials)) {
+			$request->session()->regenerate();
+			return redirect()->intended('/menu-usuario');
+		}
+
+		return back()->withErrors([
+			'email' => 'As credenciais não conferem.',
+		]);
+	}
+
 
 	// Exibe um único usuário
 	public function show($id)

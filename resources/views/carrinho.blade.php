@@ -12,6 +12,7 @@
     <header>
         @include('include.header')
     </header>
+
     <main>
         <div class="div-carrinho-compras">
             <div class="centralizar_txt">
