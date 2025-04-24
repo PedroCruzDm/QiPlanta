@@ -54,7 +54,7 @@
                                 <h5 class="card-title">Nome do Produto</h5>
                                 <p>Preço: R$ 00,00</p>
                                 <p>Quantidade: 0</p>
-                                <button class="btn btn-primary btn-sm">Editar</button>
+                                <button class="btn btn-success btn-sm">Editar</button>
                                 <button class="btn btn-danger btn-sm">Excluir</button>
                             </div>
                         </div>
@@ -68,7 +68,7 @@
                                 <h5 class="card-title">Nome do Produto</h5>
                                 <p>Preço: R$ 00,00</p>
                                 <p>Quantidade: 0</p>
-                                <button class="btn btn-primary btn-sm">Editar</button>
+                                <button class="btn btn-success btn-sm">Editar</button>
                                 <button class="btn btn-danger btn-sm">Excluir</button>
                             </div>
                         </div>
@@ -82,7 +82,7 @@
                                 <h5 class="card-title">Nome do Produto</h5>
                                 <p>Preço: R$ 00,00</p>
                                 <p>Quantidade: 0</p>
-                                <button class="btn btn-primary btn-sm">Editar</button>
+                                <button class="btn btn-success btn-sm">Editar</button>
                                 <button class="btn btn-danger btn-sm">Excluir</button>
                             </div>
                         </div>
