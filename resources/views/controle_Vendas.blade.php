@@ -56,7 +56,7 @@
                         </td>
                         <td>{{ $produtos->nome }}</td>
                         <td>
-                            <img src="{{ asset('storage/' . $produtos->imagem) }}" alt="{{ $produtos->nome }}" class="imagem-produto">
+                            <img url="{{ $produtos->imagem }}" class="imagem-produto">
                         </td>
                         <td>
                             @if($produtos->video == null)

@@ -114,6 +114,7 @@ main {
 /* Botão de cadastro */
 .btn-cadastro-login {
     background-color: #4CAF50;
+    text-decoration: none; 
     color: var(--text-color);
     border: none;
     padding: 16px 32px;
@@ -122,20 +123,6 @@ main {
     cursor: pointer;
     position: relative;
     overflow: hidden;
-}
-
-.btn-cadastro-login:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.3), transparent);
-}
-
-.btn-cadastro-login:hover:before {
-    left: 100%;
 }
 
 /* Inputs do formulário */
