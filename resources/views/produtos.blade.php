@@ -56,7 +56,7 @@
                 </div>
 
                 <div class="produto">
-                    <img src="{{ url('image/jiboia.png') }}" alt="">
+                    <img src="{{ url('image/jiboia.png') }}" style="margin-bottom: 30px;" alt="">
                     <h3>Jibóia</h3>
                     <p>Uma trepadeira resistente que se adapta bem a vários tipos de iluminação. Não exige muitos cuidados e é excelente para purificação do ar.</p>
                 <center>
